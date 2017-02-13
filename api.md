@@ -105,7 +105,7 @@ X-Auth-Token: vr5HmMkzlxKE70W1y4MibiJUusZwZC25NOVBEx3BD1
       + Body
 
             {
-                "token": "EAAJCKYTYO1QBAJMRoZBzJYr6ZC54mDNFDrOwOOLYB0j4HtlUTLZA7Rhc3DQ93XmUvo2VcKgSZCxD5GP4iScW7aoi8zpjLQRZArmggQ9rmDr9MUkNHNvuThgMAM77lfLajZAZBnKCGTM0MGboDIhs0msBPrDvgkM86rreKZBCi4uAuGFjTLtrgfZBK"
+                "token": "{"access_token":"ya29.GlzxA8DInPCbp0aKtVwTkZgPMlJhdIJTiR3V1n5jyj_SURcVbWU55WcE2zqqGdiOKNj3vvqll4OB86rljAfiaCkCN1xkYHuWZOmXfB34GmlDFrUj9xwfDFNXyuImog","token_type":"Bearer","expires_in":3599,"id_token":"eyJhbGciOiJSUzI1NiIsImtpZCI6ImRlOTdmMzA1MTRjOWU4NThiYzA0ODc3NjNmNzNmN2UwYzVmYTBhYjEifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJpYXQiOjE0ODY5NTI2MDIsImV4cCI6MTQ4Njk1NjIwMiwiYXRfaGFzaCI6ImRwYjM4YklXdUhhazlZWWcyTHh0eWciLCJhdWQiOiIzODMyODYxNzU2NC04b2g1YTRqZWplYnNvZzgwamh1bHJpcGk5NzVlYXM5ZC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwNDk4MzA4OTI1OTY5NDE1NTk5OSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIzODMyODYxNzU2NC04b2g1YTRqZWplYnNvZzgwamh1bHJpcGk5NzVlYXM5ZC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImhkIjoiaHV5cGhhbS5pbyIsImVtYWlsIjoiY29udGFjdEBodXlwaGFtLmlvIiwibmFtZSI6Ikh1eSBQaGFtIiwicGljdHVyZSI6Imh0dHBzOi8vbGg0Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tNVdsNEt0SjVtVUUvQUFBQUFBQUFBQUkvQUFBQUFBQUFBb2MveWRBYzRXVEF6em8vczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6Ikh1eSIsImZhbWlseV9uYW1lIjoiUGhhbSIsImxvY2FsZSI6ImVuIn0.i-Py2TZu4IbXmbS6AGcoIE9fAPOxNgU4cQJWcDgvM_SeGGolnnGg-XQlnRtEl6RssocyZEfc4fCUdJjNPDBnhdWR95tVhbB9mGEYvVYBRqjKO75BM-pSNPUtoUJcvFXUK_8MyWL_vITzmNrMDAgxK9N12v6CsWL0vD-Nz2RR_ocCNKDUjzXFsNbLA5B_X-N9jv6fXGm9e8LzOH7tIMpyByie9w-mWPLcXm9b2udDtklPZIH_fOcUqfyc1hBMdMTI6367uTi9Wclbn5VNE_E8cCRicZNj13ocaQkCT0f7ew40MKRGpR2qvNXc5EyMkUoe7n_X5miZaoTDMilhMXXcHg","created":1486952602}"
             }
 
 + Response 200 (application/json)
@@ -137,7 +137,11 @@ X-Auth-Token: vr5HmMkzlxKE70W1y4MibiJUusZwZC25NOVBEx3BD1
       + Body
 
             {
-                "token": "EAAJCKYTYO1QBAJMRoZBzJYr6ZC54mDNFDrOwOOLYB0j4HtlUTLZA7Rhc3DQ93XmUvo2VcKgSZCxD5GP4iScW7aoi8zpjLQRZArmggQ9rmDr9MUkNHNvuThgMAM77lfLajZAZBnKCGTM0MGboDIhs0msBPrDvgkM86rreKZBCi4uAuGFjTLtrgfZBK"
+                "token": {
+                    "oauth_token": "2956901154-SUSJUlJDvESbfd7UOqCVCAGHWxxYOzudgxTDGmc",
+                    "oauth_token_secret": "H4hcgPWd9OKMJZ7XI7oXITMKZ4b1zRONzkQQkTE8bkVUG"
+                },
+              "email": "contact@huypham.io"
             }
 
 + Response 200 (application/json)
