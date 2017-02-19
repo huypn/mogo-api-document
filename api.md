@@ -325,7 +325,47 @@ X-Auth-Token: vr5HmMkzlxKE70W1y4MibiJUusZwZC25NOVBEx3BD1
                 "msg": "Phone number already exist !"
             }
         }
+## Forget Password [/forgot-password] 
 
+### Request url to reset password [POST]
+
++ Request Success (application/json)
+
+    + Body
+
+            {
+                "email": "email@gmail.com"
+            }
+
+    
++ Response 200 (application/json)
+
+        {
+            "message": {
+                "type": "success",
+                "code": 1000,
+                "msg": "Success"
+            }
+        }
+
++ Request Error (application/json)
+
+    + Body
+
+            {
+                "email": "email2@gmail.com"
+            }
+
+
++ Response 200 (application/json)
+
+        {
+            "message": {
+                "type": "error",
+                "code": 1100,
+                "msg": "Account does not exist"
+            }
+        }
 
 # Group Places
 Search and manage places.
@@ -559,6 +599,7 @@ Manage an existing places.
 
             {
                 "place_id": 1,
+                "rating": 4,
                 "message" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nam eius sint, placeat officia saepe repellat libero quaerat beatae neque nesciunt esse enim quam doloremque numquam sapiente. Nam, sit, architecto!"
             }
 
