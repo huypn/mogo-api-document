@@ -588,7 +588,7 @@ Manage an existing places.
 
 ### Create place reviews [POST]
 
-+ Request (application/json)
++ Request (multipart/form-data)
 
     + Headers
 
@@ -600,7 +600,9 @@ Manage an existing places.
             {
                 "place_id": 1,
                 "rating": 4,
-                "message" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nam eius sint, placeat officia saepe repellat libero quaerat beatae neque nesciunt esse enim quam doloremque numquam sapiente. Nam, sit, architecto!"
+                "message" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nam eius sint, placeat officia saepe repellat libero quaerat beatae neque nesciunt esse enim quam doloremque numquam sapiente. Nam, sit, architecto!",
+                "review_images[]": "",
+                "review_images[]": ""
             }
 
 + Response 201 (application/json)
