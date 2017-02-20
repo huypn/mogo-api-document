@@ -798,7 +798,7 @@ Checkins and History.
             ]
         }
 
-## Histories [/histories]
+## Histories [/histories?page=2]
 
 ### Get Histories [GET]
 
