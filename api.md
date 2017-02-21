@@ -597,13 +597,22 @@ Manage an existing places.
 
     + Body
 
-            {
-                "place_id": 1,
-                "rating": 4,
-                "message" : "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nam eius sint, placeat officia saepe repellat libero quaerat beatae neque nesciunt esse enim quam doloremque numquam sapiente. Nam, sit, architecto!",
-                "review_images[]": "",
-                "review_images[]": ""
-            }
+            --__X_PAW_BOUNDARY__
+				Content-Disposition: form-data; name="review"
+				Content-Type: application/json
+				
+				{"place_id":"1","rating":"4","message":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit, nam eius sint, placeat officia saepe repellat libero quaerat beatae neque nesciunt esse enim quam doloremque numquam sapiente. Nam, sit, architecto!"}
+				--__X_PAW_BOUNDARY__
+				Content-Disposition: form-data; name="review_images[]"
+				Content-Type: application/octet-stream
+				
+				
+				--__X_PAW_BOUNDARY__
+				Content-Disposition: form-data; name="review_images[]"
+				Content-Type: application/octet-stream
+				
+				
+				--__X_PAW_BOUNDARY__--
 
 + Response 201 (application/json)
 
@@ -850,8 +859,17 @@ Promotions.
 
 ## List Promotion [/promotions]
 
-### GET List Promotion [GET]
+### GET List Promotion [POST]
 
++ Request (application/json)
+
+    + Body
+
+            {
+                "page": 2,
+                "number": 10
+            }
+        
 + Response 200 (application/json)
 
         {
