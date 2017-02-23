@@ -163,6 +163,72 @@ X-Auth-Token: vr5HmMkzlxKE70W1y4MibiJUusZwZC25NOVBEx3BD1
             ]
         }
 
+## Social Connect [/login/connect]
+Connect with current account
+
+### Connect current account with Social account [POST]
+
++ Request (application/json)
+
+	 + Body
+	
+				{
+					"token": "",
+					"email": "",
+					"type": "facebook|google|twitter"
+ 	 			}
+ 	 			
++ Response 200 (application/json)
+
+			{
+            "data": [
+                "id": 1,
+                "fullname": "123",
+                "email": "kennyfans999@gmail.com",
+                "avatar": "http://mogo.dev/media/5880e8e0ca978.jpg",
+                "phone": "01674559825",
+                "notification_email": 0,
+                "notification_sms": 0,
+                "notification_push": 0,
+                "facebook_connect": 0,
+                "google_connect": 0,
+                "twitter_connect": 0,
+                "token": "1d2aa620d5750f7940b008143883f7d35849e373"            
+            ]
+        }
+
+## Social Disconnect [/login/disconnect]
+Disconnect current account with social account
+
+### Dizonnect current account with Social account [POST]
+
++ Request (application/json)
+
+	 + Body
+	
+				{
+					"email": "",
+					"type": "facebook|google|twitter"
+ 	 			}
+ 	 			
++ Response 200 (application/json)
+
+			{
+            "data": [
+                "id": 1,
+                "fullname": "123",
+                "email": "kennyfans999@gmail.com",
+                "avatar": "http://mogo.dev/media/5880e8e0ca978.jpg",
+                "phone": "01674559825",
+                "notification_email": 0,
+                "notification_sms": 0,
+                "notification_push": 0,
+                "facebook_connect": 0,
+                "google_connect": 0,
+                "twitter_connect": 0,
+                "token": "1d2aa620d5750f7940b008143883f7d35849e373"            
+            ]
+        }
 
 
 ## Register with Email [/register] 
