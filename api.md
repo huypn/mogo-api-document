@@ -166,7 +166,7 @@ X-Auth-Token: vr5HmMkzlxKE70W1y4MibiJUusZwZC25NOVBEx3BD1
 ## Social Connect [/login/connect]
 Connect with current account
 
-### Connect current account with Social account [POST]
+### Social Connect [POST]
 
 + Request (application/json)
 
@@ -200,7 +200,7 @@ Connect with current account
 ## Social Disconnect [/login/disconnect]
 Disconnect current account with social account
 
-### Dizonnect current account with Social account [POST]
+### Social Disconnect [POST]
 
 + Request (application/json)
 
