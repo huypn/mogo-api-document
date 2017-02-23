@@ -22,7 +22,8 @@ X-Auth-Token: vr5HmMkzlxKE70W1y4MibiJUusZwZC25NOVBEx3BD1
 
             {
                 "email": "example@gmail.com",
-                "password": "123456"
+                "password": "123456",
+                "deviceToken": ""
             }
 
     
@@ -74,7 +75,8 @@ X-Auth-Token: vr5HmMkzlxKE70W1y4MibiJUusZwZC25NOVBEx3BD1
       + Body
 
             {
-                "token": "EAAJCKYTYO1QBAJMRoZBzJYr6ZC54mDNFDrOwOOLYB0j4HtlUTLZA7Rhc3DQ93XmUvo2VcKgSZCxD5GP4iScW7aoi8zpjLQRZArmggQ9rmDr9MUkNHNvuThgMAM77lfLajZAZBnKCGTM0MGboDIhs0msBPrDvgkM86rreKZBCi4uAuGFjTLtrgfZBK"
+                "token": "EAAJCKYTYO1QBAJMRoZBzJYr6ZC54mDNFDrOwOOLYB0j4HtlUTLZA7Rhc3DQ93XmUvo2VcKgSZCxD5GP4iScW7aoi8zpjLQRZArmggQ9rmDr9MUkNHNvuThgMAM77lfLajZAZBnKCGTM0MGboDIhs0msBPrDvgkM86rreKZBCi4uAuGFjTLtrgfZBK",
+                "deviceToken": ""
             }
 
 + Response 200 (application/json)
@@ -105,7 +107,8 @@ X-Auth-Token: vr5HmMkzlxKE70W1y4MibiJUusZwZC25NOVBEx3BD1
       + Body
 
             {
-                "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImRlOTdmMzA1MTRjOWU4NThiYzA0ODc3NjNmNzNmN2UwYzVmYTBhYjEifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJpYXQiOjE0ODY5NTczODMsImV4cCI6MTQ4Njk2MDk4MywiYXRfaGFzaCI6ImdaNU03bVlhbnVFd2xxN2w1ZFY1Q2ciLCJhdWQiOiIzODMyODYxNzU2NC04b2g1YTRqZWplYnNvZzgwamh1bHJpcGk5NzVlYXM5ZC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwNDk4MzA4OTI1OTY5NDE1NTk5OSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIzODMyODYxNzU2NC04b2g1YTRqZWplYnNvZzgwamh1bHJpcGk5NzVlYXM5ZC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImhkIjoiaHV5cGhhbS5pbyIsImVtYWlsIjoiY29udGFjdEBodXlwaGFtLmlvIiwibmFtZSI6Ikh1eSBQaGFtIiwicGljdHVyZSI6Imh0dHBzOi8vbGg0Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tNVdsNEt0SjVtVUUvQUFBQUFBQUFBQUkvQUFBQUFBQUFBb2MveWRBYzRXVEF6em8vczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6Ikh1eSIsImZhbWlseV9uYW1lIjoiUGhhbSIsImxvY2FsZSI6ImVuIn0.QnDPlixGuNp4cCe57Li8_tSDixEcemSgyzmdR-tZVL8kTRajajQZ1KVDkW9KpdB6y2x88SCSbA1tJlJuTN8v052i69pkqnwVg43hU6h--m4I4SFoRT3St3ff_bvyUZd_pP4v2jrzK1dbauh2RoP5x-qhidGuFM52PIryXBfC69zWsLzILHbosSTS0WCxTgUJ7SeHpf58ivrkc72ZPNUvyw1GbbjqLICphJYANzYsr43xnoIzU2_izanXY07pwsVmZFWjOJhTc7X3xnIyfB9n64xVtPPSXF9IsgpHqYDKCQOTr7YBHPMmKmRTmJOixW0SAAHvJHz9AtKmntG-hKGLFQ"
+                "token": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImRlOTdmMzA1MTRjOWU4NThiYzA0ODc3NjNmNzNmN2UwYzVmYTBhYjEifQ.eyJpc3MiOiJodHRwczovL2FjY291bnRzLmdvb2dsZS5jb20iLCJpYXQiOjE0ODY5NTczODMsImV4cCI6MTQ4Njk2MDk4MywiYXRfaGFzaCI6ImdaNU03bVlhbnVFd2xxN2w1ZFY1Q2ciLCJhdWQiOiIzODMyODYxNzU2NC04b2g1YTRqZWplYnNvZzgwamh1bHJpcGk5NzVlYXM5ZC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsInN1YiI6IjEwNDk4MzA4OTI1OTY5NDE1NTk5OSIsImVtYWlsX3ZlcmlmaWVkIjp0cnVlLCJhenAiOiIzODMyODYxNzU2NC04b2g1YTRqZWplYnNvZzgwamh1bHJpcGk5NzVlYXM5ZC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSIsImhkIjoiaHV5cGhhbS5pbyIsImVtYWlsIjoiY29udGFjdEBodXlwaGFtLmlvIiwibmFtZSI6Ikh1eSBQaGFtIiwicGljdHVyZSI6Imh0dHBzOi8vbGg0Lmdvb2dsZXVzZXJjb250ZW50LmNvbS8tNVdsNEt0SjVtVUUvQUFBQUFBQUFBQUkvQUFBQUFBQUFBb2MveWRBYzRXVEF6em8vczk2LWMvcGhvdG8uanBnIiwiZ2l2ZW5fbmFtZSI6Ikh1eSIsImZhbWlseV9uYW1lIjoiUGhhbSIsImxvY2FsZSI6ImVuIn0.QnDPlixGuNp4cCe57Li8_tSDixEcemSgyzmdR-tZVL8kTRajajQZ1KVDkW9KpdB6y2x88SCSbA1tJlJuTN8v052i69pkqnwVg43hU6h--m4I4SFoRT3St3ff_bvyUZd_pP4v2jrzK1dbauh2RoP5x-qhidGuFM52PIryXBfC69zWsLzILHbosSTS0WCxTgUJ7SeHpf58ivrkc72ZPNUvyw1GbbjqLICphJYANzYsr43xnoIzU2_izanXY07pwsVmZFWjOJhTc7X3xnIyfB9n64xVtPPSXF9IsgpHqYDKCQOTr7YBHPMmKmRTmJOixW0SAAHvJHz9AtKmntG-hKGLFQ",
+                "deviceToken": ""
             }
 
 + Response 200 (application/json)
@@ -141,7 +144,8 @@ X-Auth-Token: vr5HmMkzlxKE70W1y4MibiJUusZwZC25NOVBEx3BD1
                     "oauth_token": "2956901154-SUSJUlJDvESbfd7UOqCVCAGHWxxYOzudgxTDGmc",
                     "oauth_token_secret": "H4hcgPWd9OKMJZ7XI7oXITMKZ4b1zRONzkQQkTE8bkVUG"
                 },
-              "email": "contact@huypham.io"
+              "email": "contact@huypham.io",
+              "deviceToken": ""
             }
 
 + Response 200 (application/json)
