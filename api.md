@@ -433,6 +433,47 @@ Disconnect current account with social account
             }
         }
 
+## Request Verify Phone Code [/user/phone/request_code]
+
+### Request Code [POST]
+
++ Request (application/json)
+
+	+ Body
+	
+            {
+                "email" : "",
+                "phone": ""
+            }
+	 			
++ Response 200 (application/json)
+
+			{
+				"type": "success",
+				"msg": "Success"
+			}
+
+## Verify Phone Code [/user/phone/verify_code]
+
+### Verify Code [POST]
+
++ Request (application/json)
+
+	+ Body
+	
+            {
+                "email" : "",
+                "phone": "",
+                "code": ""
+            }
+	 			
++ Response 200 (application/json)
+
+			{
+				"type": "success",
+				"msg": "Success"
+			}
+
 # Group Places
 Search and manage places.
 
