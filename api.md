@@ -495,29 +495,29 @@ Disconnect current account with social account
 + Response 200 (application/json)
 
 			{
-              "data": [
-                {
-                  "title": "Animi commodi dolorum nihil voluptas odio aperiam non.",
-                  "body": "Unde neque optio reiciendis dolores nulla in. Et accusamus et vel laudantium numquam. Ex fugiat fuga delectus rerum voluptates.",
-                  "status": 0,
-                  "created_at": null
+                "data": [
+                    {
+                        "title": "Animi commodi dolorum nihil voluptas odio aperiam non.",
+                        "body": "Unde neque optio reiciendis dolores nulla in. Et accusamus et vel laudantium numquam. Ex fugiat fuga delectus rerum voluptates.",
+                        "status": 0,
+                        "created_at": null
+                    }
+                ],
+                "meta": {
+                    "pagination": {
+                        "total": 1,
+                        "count": 1,
+                        "per_page": 10,
+                        "current_page": 1,
+                        "total_pages": 1,
+                        "links": []
+                    }
+                },
+                "message": {
+                    "type": "success",
+                    "code": 1000,
+                    "msg": "Success"
                 }
-              ],
-              "meta": {
-                "pagination": {
-                  "total": 1,
-                  "count": 1,
-                  "per_page": 10,
-                  "current_page": 1,
-                  "total_pages": 1,
-                  "links": []
-                }
-              },
-              "message": {
-                "type": "success",
-                "code": 1000,
-                "msg": "Success"
-              }
             }
 
 # Group Places
